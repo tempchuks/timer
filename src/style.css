@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#app {
+  height: 80%;
+  width: 90%;
+  background-color: rgb(49, 233, 156);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.timer-container {
+  height: 150px;
+  width: 150px;
+  background-color: white;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.settings-modal {
+  min-height: 100%;
+  min-width: 100%;
+  background: transparent;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(6px);
+}
+.settings-container {
+  height: 240px;
+  width: 80%;
+  background-color: white;
+  padding: 1rem;
+  padding-top: 2rem;
+  border-radius: 5px;
+}
+
+.app-items {
+  display: grid;
+  gap: 1rem;
+}
+
+.settings-box {
+  display: grid;
+  gap: 1rem;
+}
+.settings-box label {
+  width: 5rem;
+  text-align: right;
+}
+.settings-box input {
+  flex-grow: 1;
+}
+.input-box {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+.submit-box {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.submit {
+  border: 1px solid greenyellow;
+  padding: 0.5rem;
+  border-radius: 5px;
+  background: inherit;
+  font-weight: bold;
+  font-size: 16px;
+}
